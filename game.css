@@ -1,0 +1,161 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+#heart_info{
+	position:absolute;
+	left:260px;
+	top:440px;
+}
+
+
+#gameTitle{
+	position:absolute;
+	left:180px;
+	top:10px;
+}
+
+#controls{
+	position:absolute;
+	left:10px;
+	top:400px;
+}
+
+#about_info{
+	padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:800px;
+    height:540px;
+	z-index:5000;
+	display:none;
+}
+
+#gameStartContainer{
+	padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top:28px;
+    left:240px;
+    width:800px;
+    height:540px;
+	z-index:100000;
+	-webkit-transition: background-color 2s;
+    transition: background-color 2s;
+}
+
+#about{
+	position:absolute;
+	font-family:Montserrat;
+	font-size:1.4em;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:14px;
+	padding-bottom:14px;
+	top:30px;
+	left:30px;
+	border-radius:15px;
+	border:2px solid black;
+	z-index:300000;
+	-webkit-transition: color 1s, background-color 1s;
+    transition: color 1s, background-color 1s;
+}
+#about p{
+	margin:0;
+}
+#gameStart{
+	position:absolute;
+	font-family:Montserrat;
+	font-size:1.4em;
+	padding-left:10px;
+	padding-right:10px;
+	top:420px;
+	left:600px;
+	border-radius:15px;
+	border:2px solid black;
+	z-index:300000px;
+	-webkit-transition: color 1s, background-color 1s, -webkit-transform 1s;
+    transition: color 1s, background-color 1s, transform 1s;
+}
+#gameStart:hover{
+	color:yellow;
+	cursor:pointer;
+	background-color:black;
+}
+
+#about:hover{
+	color:white !important;
+	cursor:pointer;
+	background-color:black;
+}
+
+
+#gameOverContainer{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.2);
+	z-index:100000;
+}
+
+#gameOver{
+	position:absolute;
+	font-size:3em;
+	top: 200px;
+    left: 240px;
+    padding-left: 259px;
+    padding-right: 259px;
+	font-family: Montserrat;
+	background:rgba(0,0,0,0.5);
+	color:darkorange;
+}
+#gameOver p{
+	margin:5px;
+}
+#tryAgain{
+	position:absolute;
+	top:280px;
+	left:550px;
+	font-size:2em;
+	background:rgba(0,0,0,0.08);
+	border-radius:15px;
+	font-family: Montserrat;
+	-webkit-transition: color 1s, background-color 1s;
+    transition: color 1s, background-color 1s;
+}
+#tryAgain p{
+	margin:5px;
+}
+#tryAgain:hover{
+	background-color:rgba(0,0,0,0.5);
+	color:darkorange;
+	cursor:pointer;
+}
+
+#lives{
+	position:absolute;
+	font-size:2em;
+	font-family:Montserrat;
+	top:30px;
+	left:820px;
+	z-index:500000;
+}
+#distance{
+	position:absolute;
+	font-size:2em;
+	font-family:Montserrat;
+	top:30px;
+	left:315px;
+	z-index:500000;
+}
+
+
+
+
