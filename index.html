@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cliff Game</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<link href="normalize.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="game.css"/>
+	<style>
+		canvas{
+		    padding: 0;
+		    margin: auto;
+		    display: block;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+			border:2px solid black;
+		}
+		#gameOverCanvas{
+			z-index: 5;
+			background: white;
+		}
+
+	</style>
+</head>
+<body>
+	<p id="lives"></p>
+	<p id="distance"></p>
+	<div id="gameStartContainer" style="display:block">
+		<img id="gameTitle" src="./img/Ahhh.png"/>
+		<img id="controls" src="./img/controls.svg"/>
+		<img id="heart_info" src="./img/heart_info.svg"/>
+		<img id="about_info" src="./img/about_info.svg"/>
+		<div id="gameCoverPage"></div>
+		<div id="aboutPage"></div>
+		<div id="about">
+			<p>About</p>
+		</div>
+		<div id="gameStart">
+			<p>Start Game</p>
+		</div>
+	</div>
+	<canvas id="bgCanvas" width="800" height="540">Browser does not support canvas</canvas>
+	<canvas id="playerCanvas" width="800" height="540" style="z-index:100"></canvas>
+	<canvas id="gameCanvas" width ="800" height="540"></canvas>
+	<canvas id="gameOverCanvas" width = "800" height="540" style="display:none"></canvas>
+	<div id="gameOverContainer" style="display:none">
+		<div id="gameOver" class="slidein">
+			<p>Game Over</p>
+		</div>
+		<div id="tryAgain" class="slidein">
+			<p>Try Again?</p>
+		</div>
+	</div>
+	<script src="gameStart.js"></script>
+	<script src="bg.js"></script>
+	<script src="player.js"></script>
+	<script src="game.js"></script>
+	<script src="gameOver.js"></script>
+	<script src="gameOverButtons.js"></script>
+	<script src="about.js"></script>
+</body>
+</html>
