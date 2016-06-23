@@ -40,14 +40,9 @@ body{
     margin: auto;
     display: block;
     position: absolute;
-<<<<<<< HEAD
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-=======
-    top:28px;
-    left:240px;
->>>>>>> 150b9046d89efd89a01cff8e80427c2f2eef2bef
     width:800px;
     height:540px;
 	z-index:100000;
